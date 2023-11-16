@@ -11,7 +11,7 @@ const App = () => {
     <div>
       <h1>Greetings</h1>
       <Hello name='George' />
-      <Hello name='Daisy' />
+      <Hello name='Paul' />
 
       <Hello /> 
       <Hello />
