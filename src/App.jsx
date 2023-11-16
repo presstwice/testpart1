@@ -1,24 +1,15 @@
-const Hello = (props) => {
+const App = () => {
+  const friends = [
+    { name: 'Peter', age: 4 },
+    { name: 'Maya', age: 10 },
+  ]
+
   return (
     <div>
-      <p>Hello world {props.name}</p>
+      <p>{friends[0].name} {friends[0].age}</p>
+      <p>{friends[1].name} {friends[1].age}</p>
     </div>
   )
 }
-
-const App = () => {
-  return (
-    <div>
-      <h1>Greetings</h1>
-      <Hello name='George' />
-      <Hello name='Paul' />
-
-      <Hello /> 
-      <Hello />
-      <Hello /> 
-       </div>
-  )
-}
-
 
 export default App
