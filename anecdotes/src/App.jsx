@@ -1,3 +1,7 @@
+/* A component is defined as a javascript function Const */ 
+/* The function is assigned to a constant variable App */ 
+
+
 const App = () => {
   const friends = [
     { name: 'Peter', age: 4 },
