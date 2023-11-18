@@ -1,28 +1,26 @@
-const App = () => {
-  const course = 'Half Stack application development'
-  const part1 = 'Fundementas of React'
-  const exercises1 = 10
-  const part2 = 'Using props to pass data'
-  const exercises2 = 7
-  const part3 = 'State of a component'
-  const excerises3 = 14
 
+  const Header = () => {
+    const course = 'Half Stack application development'
+  }
+
+  const Content = () => {
+    const part1 = 'Fundementals of React'
+    const exercises1 = 10
+    const part2 = 'Using props to pass data'
+    const exercises2 = 7
+    const part3 = 'State of a component'
+    const exercises3 = 14
+  }
+
+  const Total = () => {
+    {exercises1} + {exercises2} + {exercises3}
+  
 
   return (
     <div>
-      <h1>{course}</h1>
-      <p>
-        {part1} {exercises1}
-      </p>
-      <p>
-        {part2} {exercises2}
-      </p>
-      <p>
-        {part3} {excerises3}
-      </p>
-      <p>Number of exercises {exercises1 + exercises2 +excerises3}</p>
+      <Header course={course} />
     </div>
   )
-}
+  }
 
 export default App
