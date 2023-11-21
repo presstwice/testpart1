@@ -3,23 +3,37 @@ const Header = (props) => {
   return (
     <div>
       <h1>
-        {props.course}
-        </h1>
+       Course Title: {props.course}
+      </h1>
     </div>
   )
 }
 
-const Title = (props) => {
+const Content = (props) => {
   console.log(props)
   return (
     <div>
       <p>
-        {part1} {exercises1}
+        {props.part1} {props.exercises1}
+      </p>
+      <p>
+        {props.part2} {props.exercises2}
+      </p>
+      <p>
+        {props.part3} {props.exercises3}
       </p>
     </div>
   )
 }
 
+const Total = (props) => {
+  console.log(props)
+  return (
+    <div>
+      {exercises1} + {exercises2} + {exercises3}
+    </div>
+  )
+}
 
 
 const App = () => {
@@ -33,17 +47,10 @@ const App = () => {
 
   return (
     <div>
-       < Header course = {course} />
-      <p>
-        {part1} {exercises1}
-      </p>
-      <p>
-        {part2} {exercises2}
-      </p>
-      <p>
-        {part3} {exercises3}
-      </p>
-      <p>Number of exercises {exercises1 + exercises2 + exercises3}</p>
+       <Header course = {course} />
+       <Content />
+       <Total />
+    
     </div>
   )
 }
